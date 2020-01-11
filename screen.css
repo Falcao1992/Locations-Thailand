@@ -1,0 +1,485 @@
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Source Sans Pro' , sans-serif;
+}
+
+body {
+    line-height: 1.625rem;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+a:hover {
+    color: #C89446;
+}
+
+h3 {
+    margin: 0 5px;
+}
+
+ul {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+
+.nav-activité {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 1000;
+    padding: 0 5px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    
+}
+
+.nav-activité a{
+    padding: 2px 6px;
+    text-transform: uppercase;
+}
+.nav-activité-all-item {
+    color: rgb(0, 0, 0);
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+}
+
+.nav-activité-all-item:hover .submenu {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(59, 73, 77, 0.526);
+    color: white;
+    text-align: center;
+    
+}
+
+.submenu {
+    display: none;
+    padding-inline-start: 0px;
+    white-space: nowrap;
+}
+.submenu a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+.submenu a {
+    font-weight: normal;
+    float: left;
+}
+
+
+.header {
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(28, 28, 28, 0.3)),
+        url(img/banniere.jpg) no-repeat center center / cover ;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.header2 {
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(28, 28, 28, 0.3)),
+        url(img/Résidence-Pisicne-View3.jpg) no-repeat center center / cover ;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.header3 {
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(28, 28, 28, 0.3)),
+        url(img/Activité.jpg) no-repeat center center / cover ;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.topbar {
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+.navigation {
+    padding: 10px 0;
+    
+}
+
+.nav-appartement {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+    background-color: rgb(211, 211, 211,0.4);
+}
+
+.nav-appartement-items {
+    padding: 0 10px;
+}
+
+.menu-items:hover {
+    color: #C89446;
+}
+.menu-items {
+    font-size: .975rem;
+    display: inline-block;
+    margin: 0 15px;
+}
+.acceuil {
+    padding-top: 10px
+}
+.baseline {
+    text-align: center;
+    display: block;
+}
+
+.baseline-welcome {
+    font-family: 'pinyon script' , sans-serif;
+    font-size: 2.45rem;
+    text-align: center;
+    display: block;
+    color: #C89446;
+    padding: 13px 0;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.baseline-name {
+    display: block;
+    font-size: 2.70rem;
+    letter-spacing: 3px;
+    padding: 5px 0;
+}
+
+.baseline-slogan {
+    display: block;
+    padding: 7px 0;
+    letter-spacing: 2px;
+    font-size: .7rem;
+}
+
+.block {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px
+}
+
+.block-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: #C89446 1px solid;
+}
+
+.block-center {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.title::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #C89446;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-left: 5px
+}
+.title span{
+    text-transform: none;
+    font-family: 'pinyon script' , sans-serif;
+    color: #C89446;
+    display: block;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+
+.see-more {
+    color: #C89446;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.see-more::after {
+    content: " >"
+}
+
+
+.diapo-app {
+    width: 100%;
+    height: 228px;
+    background: url("img/App-Salon.jpg") no-repeat center center / cover;
+    animation-name: diapoapp;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border: #C89446 1px solid;
+    margin: 5px auto;
+}
+
+@keyframes diapoapp{
+    0%{background-image: url("img/App-Salon.jpg");}
+    10%{background-image: url("img/App-Salon.jpg");}
+    25%{background-image: url("img/App-Salon2.jpg");}
+    35%{background-image: url("img/App-Salon2.jpg");}
+    50%{background-image: url("img/App-Chambre.jpg");}
+    60%{background-image: url("img/App-Chambre.jpg");}
+    75%{background-image: url("img/App-SDB.jpg");}
+    85%{background-image: url("img/App-SDB.jpg");}
+}
+.diapo-piscine {
+    width: 100%;
+    height: 228px;
+    background: url("img/Résidence-Pisicne-View.jpg") no-repeat center center / cover;
+    animation-name: diapopiscine;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border: #C89446 1px solid;
+    margin: 5px auto;
+}
+
+@keyframes diapopiscine{
+    0%{background-image: url("img/Résidence-Pisicne-View.jpg");}
+    10%{background-image: url("img/Résidence-Pisicne-View.jpg");}
+    33%{background-image: url("img/Résidence-Pisicne-View2.jpg");}
+    43%{background-image: url("img/Résidence-Pisicne-View2.jpg");}
+    66%{background-image: url("img/Résidence-Pisicne-View3.jpg");}
+    76%{background-image: url("img/Résidence-Pisicne-View3.jpg");}
+}
+
+.diapo-SDS {
+    width: 100%;
+    height: 228px;
+    background: url("img/Salle-Sports.jpg") no-repeat center center / cover;
+    animation-name: diaposds;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border: #C89446 1px solid;
+    margin: 5px auto;
+}
+
+@keyframes diaposds{
+    0%{background-image: url("img/Salle-Sports.jpg");}
+    30%{background-image: url("img/Salle-Sports.jpg");}
+    50%{background-image: url("img/Salle-Sports2.jpg");}
+    80%{background-image: url("img/Salle-Sports2.jpg");}
+}
+
+.diapo-restaurant {
+    width: 100%;
+    height: 228px;
+    background: url("img/Restaurant.jpg") no-repeat center center / cover;
+    animation-name: diaporestaurant;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border: #C89446 1px solid;
+    margin: 5px auto;
+}
+
+@keyframes diaporestaurant{
+    0%{background-image: url("img/Restaurant.jpg");}
+    30%{background-image: url("img/Restaurant.jpg");}
+    50%{background-image: url("img/restaurant2.jpg");}
+    80%{background-image: url("img/restaurant2.jpg");}
+}
+
+.diapo-koh-larn {
+    width: 100%;
+    height: 228px;
+    background: url("img/koh-larn.jpg") no-repeat center center / cover;
+    animation-name: diapokohlarn;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border: #C89446 1px solid;
+    margin: 5px auto;
+}
+
+@keyframes diapokohlarn{
+    0%{background-image: url("img/koh-larn.jpg");}
+    10%{background-image: url("img/koh-larn.jpg");}
+    25%{background-image: url("img/koh-larn2.jpg");}
+    35%{background-image: url("img/koh-larn2.jpg");}
+    50%{background-image: url("img/koh-larn3.jpg");}
+    65%{background-image: url("img/koh-larn3.jpg");}
+}
+
+.mosaique {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgb(211, 211, 211,0.4);
+    margin-bottom: 80px;
+    
+}
+.mosaique img{
+    height: 70px;
+    width: auto;
+    padding-top: 7px;
+    margin: 0 5px;
+}
+.mosaique img:hover{
+    transform: scale(1.3)
+}
+
+@media only screen and (min-width:500px){
+    .diapo {
+        width: 500px;
+        height: 296px;
+}
+}
+@media only screen and (min-width:700px) {
+
+    .header3 {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(28, 28, 28, 0.3)),
+            url(img/Activité.jpg) no-repeat center 70% / cover ;
+        }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+    }
+    
+
+    .baseline-welcome {
+        font-size: 3.15rem;
+        padding-bottom: 20px;
+    }
+
+    .baseline-name {
+        font-size: 4.55rem;
+        padding: 20px;
+    }
+
+    .baseline-slogan{
+        font-size: 1rem;
+        padding-bottom: 15px;
+
+    }
+}
+
+@media only screen and (min-width:980px) {
+
+
+    .block {
+        width: 915px;
+        margin: 80px auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .block-img img{
+        border: none;
+        width: 415px;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .block-img {
+        position: relative;
+    }
+
+    .block-right .block-img::before {
+        content: "";
+        border: #C89446 1px solid;
+        width: 100%;
+        height: 100%;
+        top: -30px;
+        right: -30px;
+        position: absolute;
+        z-index: -0;
+    }
+
+    .block-left .block-img::before {
+        content: "";
+        border: #C89446 1px solid;
+        width: 100%;
+        height: 100%;
+        top: -30px;
+        left: -30px;
+        position: absolute;
+        z-index: -0;
+    }
+
+    .block-body {
+        width: 500px;
+    }
+
+    .block-right .block-img  {
+        width: 500px;
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .block-right .block-body  {
+        width: 500px;
+        order: -1;
+    }
+    .block-left .block-img  {
+        width: 500px;
+        height: auto;
+        margin-right: 50px;
+    }
+
+    .block-center {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 80px;
+    }
+    
+    .block-center .diapo-app {
+        width: 500px;
+        height: 296px;
+        position: relative;
+    }
+
+    .block-center p{
+        margin-right: 30px;
+    }
+}
